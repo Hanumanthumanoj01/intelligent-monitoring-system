@@ -85,3 +85,7 @@ def simulate_load():
 @app.get("/metrics")
 def metrics():
     return Response(generate_latest(), media_type="text/plain")
+
+@app.get("/metrics/stats") #Dummy comit
+def stats():
+    return Response(generate_latest(), media_type="text/plain")
